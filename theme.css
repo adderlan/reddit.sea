@@ -78,7 +78,7 @@ body {
 	position: absolute;
 	left: 0.8em;
 	bottom: 6.5em;
-	content: url(%%snoo%%); /* For testing only. The Reddit logo must be changed at 'http://reddit.com/r/example/about/edit' */
+	content: url(%%snooskull%%); /* For testing only. The Reddit logo must be changed at 'http://reddit.com/r/example/about/edit' */
 	width: 100px;
 	height: 100px;
 	/* destyle */
