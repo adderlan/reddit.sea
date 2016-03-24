@@ -64,20 +64,13 @@ body {
 
 #header {
 	height: 200px;
-	background: url(%%banner%%) -190px 101% no-repeat black;
-}
-
-#header-bottom-left {
-	position: relative;
-	top: 155px;
-	height: 2.4em;
-	background-image: url(%%pagends%%);
+	background: url(%%banner%%) right -355px no-repeat black;
 }
 
 #header-img {
 	position: absolute;
-	left: 0.8em;
-	bottom: 6.5em;
+	left: 1em;
+	bottom: 5em;
 	content: url(%%snooskull%%); /* For testing only. The Reddit logo must be changed at 'http://reddit.com/r/example/about/edit' */
 	width: 100px;
 	height: 100px;
@@ -85,26 +78,29 @@ body {
 		background-image: none;
 }
 
+#header-bottom-left {
+	position: relative;
+	top: 126px;
+	background: url(%%pagends%%);
+}
+
 
 
 /* ...TABS... */
 
 .pagename, .tabmenu li a {
-	background-color: #FF0000;
+	background: #FF0000;
 	text-shadow: 1px 1px #000, 1px 1px 0.1px #000;
-	border-color: #BB0000;
-	border-style: ridge;
-	border-width: 0px 4px 0px 4px;
 	color: #FFFFFF;
+	border: ridge #BB0000;
+	border-width: 0px 4px;
 }
 
 .pagename {
-	display: inline-block;
-	position: relative;
 	top: -1.2em;
 	height: 1.6em;
 	font-size: 3.2em;
-	padding: 0em 0.2em 0em 0em;
+	padding: 135px 0.2em 0em 0em;
 }
 
 	.pagename a {
@@ -115,19 +111,19 @@ body {
 
 .tabmenu {
 	position: relative;
-	top: -3em;
+    bottom: 10px;
 }
 
 	.tabmenu li.selected {
 		position: absolute;
 		left: 0px;
-		bottom: 28px;
+		bottom: 32px;
 		font-size: 2em;
 	}
-
-		.tabmenu li.selected a {
-			padding: 3px;
-		}
+	
+	.tabmenu li a {
+		padding: 3px;
+	}
 
 
 
