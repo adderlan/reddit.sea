@@ -111,13 +111,13 @@ body {
 
 .tabmenu {
 	position: relative;
-    bottom: 10px;
+    bottom: 45px;
 }
 
 	.tabmenu li.selected {
-		position: absolute;
+		position: relative;
 		left: 0px;
-		bottom: 32px;
+		bottom: 26px;
 		font-size: 2em;
 	}
 	
