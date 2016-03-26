@@ -78,7 +78,7 @@ body {
 	position: absolute;
 	top: -9.6em;
 	left: 1.4em;
-	content: url(%%snoowhite%%); /* the Reddit logo must be changed at 'http://reddit.com/r/[%subreddit%]/about/edit' */
+	/* content: url(%%snoowhite%%); /* the Reddit logo must be changed at 'http://reddit.com/r/[%subreddit%]/about/edit' */
 	width: 8em;
 	height: 8em;
 	/* destyle */
@@ -157,7 +157,7 @@ form .spacer+.spacer{
 .formtabs-content {
 	border: 0px solid transparent;
 	border-top: 28px;
-	border-image: url(http://localhost/reddit/sea/border.png) 30;
+    /* border-image: url(http://localhost/reddit/sea/border.png) 30; commented out because this file isnt available in the repo */
 	background: url(%%parchment%%);
 	padding: 1em;
 }
@@ -245,27 +245,33 @@ form .spacer+.spacer{
 	min-width: 23px; /* To make room for the new arrow sizes */
 }
 
-.arrow {
-	background-image: url(%%vote%%);
-	width: 23px;
-	height: 23px;
+.arrow.down {
+    background-image: url(%%vote%%);
+    width: 23px;
+    height: 23px;
+    background-position: -23px 0px;
 }
 
-	.arrow.down {
-		background-position: -23px 0px;
-	}
+.arrow.downmod {
+    background-image: url(%%vote%%);
+    width: 23px;
+    height: 23px;
+    background-position: -23px -23px;
+}
 
-	.arrow.downmod {
-		background-position: -23px -23px;
-	}
+.arrow.up {
+    background-image: url(%%vote%%);
+    width: 23px;
+    height: 23px;
+    background-position: 0px 0px;
+}
 
-	.arrow.up {
-		background-position: 0px 0px;
-	}
-
-	.arrow.upmod {
-		background-position: 0px -23px;
-	}
+.arrow.upmod {
+    background-image: url(%%vote%%);
+    width: 23px;
+    height: 23px;
+    background-position: 0px -23px;
+}
 
 .arrow.up:hover:before {
 	content: "So say we all. Huzzah!";
