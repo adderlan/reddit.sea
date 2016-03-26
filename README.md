@@ -1,3 +1,5 @@
+*v5 is for victory, or enough so that I feel confident that any changes based on that version will be heading in the right direction.*
+
 # red(dit)sea
 
 Get it? Red *dit* sea?
@@ -18,8 +20,15 @@ All images are © Anon Adderlan and under [CC BY 3.0 US](https://creativecommons
 * banner.jpg, footer.png  (© John Wick(?). For use on 7th sea fansites only) 
 * parchment.jpg (© [ZingerBug](http://www.zingerbug.com/background.php?MyFile=parchment_paper_wallpaper_texture_seamless.php). No alteration or commercial use)
 * wood.jpg (© [MyFreeTextures](http://www.myfreetextures.com/straight-dark-texture-seamless-wood/ ). Also under [CC BY 3.0 US](https://creativecommons.org/licenses/by/3.0/us/))
+* archive.png (© [ClipArtLord](http://www.clipartlord.com/2015/01/25/free-cartoon-treasure-chest-clip-art/). Free for personal or commercial use)
 * vote.png(anchor), scrollh.png, scrollv.png (© 'unknown'. But to the best of my knowledge are free for non-commercial use)
 
 ##Development
 
 Since apparently I'm not *'popular'* enought to create a subreddit on which to test this on, I have no idea if everything works. This also means I haven't been able to test this on anything but Chrome using the Stylebot plugin. So trial by fire it is, and if you are one of the aforementioned mods and what access to this repo, just ask.
+
+##Screenshots
+
+![Submit](/screenshots/submit.v5.jpg?raw=true)
+![Links](/screenshots/links.v5.jpg?raw=true)
+![Posts](/screenshots/post.v5.jpg?raw=true)
