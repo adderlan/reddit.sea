@@ -124,6 +124,17 @@ body {
 		top: 0.8em;
 		font-size: 1.8em;
 	}
+    
+    .tabmenu li.selected a {
+		text-shadow: 1px 1px #000, 1px 1px 0.1px #000;
+		background: #FF0000;
+		padding: 3px;
+        border: ridge #BB0000;
+	    border-width: 0px 4px;
+        color: #FFFFFF;
+		text-decoration: none;
+		margin: 0.4em 0.2em 0em 0.4em;
+	}
 	
 	.tabmenu li a {
 		text-shadow: 1px 1px #000, 1px 1px 0.1px #000;
@@ -237,7 +248,9 @@ form .spacer+.spacer{
 		bottom: 5px;
 	}
 
-
+.icon-menu a {
+    background: none no-repeat scroll center left;
+}
 
 /***** VOTING *****/
 
@@ -245,31 +258,25 @@ form .spacer+.spacer{
 	min-width: 23px; /* To make room for the new arrow sizes */
 }
 
+.arrow {
+    background-image: url(%%vote%%) !important;
+    width: 23px !important;
+    height: 23px !important;
+}
+
 .arrow.down {
-    background-image: url(%%vote%%);
-    width: 23px;
-    height: 23px;
     background-position: -23px 0px;
 }
 
 .arrow.downmod {
-    background-image: url(%%vote%%);
-    width: 23px;
-    height: 23px;
     background-position: -23px -23px;
 }
 
 .arrow.up {
-    background-image: url(%%vote%%);
-    width: 23px;
-    height: 23px;
     background-position: 0px 0px;
 }
 
 .arrow.upmod {
-    background-image: url(%%vote%%);
-    width: 23px;
-    height: 23px;
     background-position: 0px -23px;
 }
 
