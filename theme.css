@@ -71,7 +71,7 @@ body {
 
 #header {
 	height: 180px;
-	background: url(%%banner%%) right -355px repeat black;
+	background: url(%%banner%%) right -20px no-repeat black;
 }
 
 #header-img {
