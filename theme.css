@@ -299,9 +299,8 @@ form .spacer+.spacer{
 
 .flair {
     background: url(%%flair%%) no-repeat -9999px;
-    background-repeat: no-repeat;
-    display: block;
-		border: none;
+    border: 0;
+    padding: 0;
 }
 
 .flair-arms-avalon {
