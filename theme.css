@@ -3,32 +3,13 @@
 A Reddit theme
 by Anon Adderlan
 version 1.0 baby!
+*****************
+2.0 Updates bring in Fan Kit images
+by FuzzyLOG1CZA
+version 2.0
 *****************/
 
 /* Any settings under 'destyle' are only there to counter the default Reddit styling, and may not be necessary on implementation. The most important fix in this release is that font sizes/styles do not affect the tab layout. Next steps include styling form inputs and perhaps using a darker shade of red for the tabs. */
-
-
-
-/***** FONTS *****/
-
-/* These settings have been commented out for the following reasons:
-
-	1) Reddit can't use @import, and I haven't yet figured out how to add a font-family. Perhaps there's a setting on Reddit itself?
-
-	2) 'Jim Nightshade' is smaller than the default fonts and so requires font-size to be increased wherever it is used, which makes those fonts too large on browsers where 'Jim Nightshade' is unavailable.
-*/
-
-/*@import url(https://fonts.googleapis.com/css?family=Jim+Nightshade);
-
-.title, .rank, .pagename a, .deepthread a, .nextprev a, .next-suggestions a {
-	font-family: 'Jim Nightshade', cursive;
-}
-
-.title {
-	font-size: 1.7em;
-}*/
-
-
 
 /***** SCROLLBAR *****/
 
@@ -48,8 +29,6 @@ version 1.0 baby!
 	box-shadow: inset 0 0 12px rgba(0,0,0,0.3);
 }
 
-
-
 /***** BODY *****/
 
 body {
@@ -65,20 +44,18 @@ body {
 	height: 4px;
 }
 
-
-
 /***** HEADER *****/
 
 #header {
-	height: 180px;
-	background: url(%%banner%%) right -355px repeat black;
+	height: 200px;
+	background: url(%%banner%%) right 5px no-repeat black;
 }
 
 #header-img {
 	position: absolute;
 	top: -9.6em;
 	left: 1.4em;
-	content: url(%%snoowhite%%); /* the Reddit logo must be changed at 'http://reddit.com/r/[%subreddit%]/about/edit' */
+	/* content: url(%%snoowhite%%); /* the Reddit logo must be changed at 'http://reddit.com/r/[%subreddit%]/about/edit' */
 	width: 8em;
 	height: 8em;
 	/* destyle */
@@ -108,30 +85,39 @@ body {
 	padding: 4.8em 0.2em 0em 0em;
 }
 
-	.pagename a {
-		color: #FFFFFF;
-		text-decoration: none;
-		margin: 0.4em 0.2em 0em 0.4em;
-	}
+.pagename a {
+	color: #FFFFFF;
+	text-decoration: none;
+	margin: 0.4em 0.2em 0em 0.4em;
+}
 
 #header-bottom-left  .tabmenu {
 	position: relative;
 	bottom: 2.8em;
 }
 
-	.tabmenu li.selected {
-		position: relative;
-		top: 0.8em;
-		font-size: 1.8em;
-	}
+.tabmenu li.selected {
+	position: relative;
+	top: 0.8em;
+	font-size: 1.8em;
+}
 	
-	.tabmenu li a {
-		text-shadow: 1px 1px #000, 1px 1px 0.1px #000;
-		background: #FF0000;
-		padding: 3px;
-	}
+.tabmenu li.selected a {
+	text-shadow: 1px 1px #000, 1px 1px 0.1px #000;
+	background: #FF0000;
+	padding: 3px;
+	border: ridge #BB0000;
+	border-width: 0px 4px;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin: 0.4em 0.2em 0em 0.4em;
+}
 
-
+.tabmenu li a {
+	text-shadow: 1px 1px #000, 1px 1px 0.1px #000;
+	background: #FF0000;
+	padding: 3px;
+}
 
 /***** SUBMIT *****/
 
@@ -157,12 +143,9 @@ form .spacer+.spacer{
 .formtabs-content {
 	border: 0px solid transparent;
 	border-top: 28px;
-	border-image: url(http://localhost/reddit/sea/border.png) 30;
 	background: url(%%parchment%%);
 	padding: 1em;
 }
-
-
 
 /***** SIDEBAR *****/
 
@@ -175,21 +158,21 @@ form .spacer+.spacer{
 	border: 4px outset #884714;
 }
 
-	.morelink:hover {
-		border: 4px inset #884714;
-	}
+.morelink:hover {
+	border: 4px inset #884714;
+}
 
-	.morelink a {
-		color: #FFDD00;
-		background: url(%%wood%%) 0px 100px;
-		/* destyle */
-		width: auto;
-	}
+.morelink a {
+	color: #FFDD00;
+	background: url(%%wood%%) 0px 100px;
+	/* destyle */
+	width: auto;
+}
 
-	.morelink .nub {
-		/* destyle */
-		display: none;
-	}
+.morelink .nub {
+	/* destyle */
+	display: none;
+}
 
 .linkinfo {
 	text-shadow: 1px 1px  #000, -1px -1px #000;
@@ -214,30 +197,32 @@ form .spacer+.spacer{
 	border-image: url(%%scrollv%%) 30 stretch;
 }
 
-	.sidecontentbox .title, .sidecontentbox .content {
-		background: url(%%parchment%%);
-		border-color: #B39652;
-		border-width: 0px 1px 0px 1px;
-		margin: 0px -10px 0px -10px;
-	}
+.sidecontentbox .title, .sidecontentbox .content {
+	background: url(%%parchment%%);
+	border-color: #B39652;
+	border-width: 0px 1px 0px 1px;
+	margin: 0px -10px 0px -10px;
+}
 
-		.sidecontentbox .title {
-			text-align: center;
-			/* destyle */
-			border-style: solid;
-		}
+.sidecontentbox .title {
+	text-align: center;
+	/* destyle */
+	border-style: solid;
+}
 
-			.sidecontentbox .title h1 {
-				color: #443D2E;
-			}
+.sidecontentbox .title h1 {
+	color: #443D2E;
+}
 
-	.sidecontentbox .helplink {
-		display: block;
-		position: absolute; /* replaces previous use of 'float: right' */
-		bottom: 5px;
-	}
+.sidecontentbox .helplink {
+	display: block;
+	position: absolute; /* replaces previous use of 'float: right' */
+	bottom: 5px;
+}
 
-
+.icon-menu a {
+	background: none no-repeat scroll center left;
+}
 
 /***** VOTING *****/
 
@@ -246,26 +231,26 @@ form .spacer+.spacer{
 }
 
 .arrow {
-	background-image: url(%%vote%%);
-	width: 23px;
-	height: 23px;
+    background-image: url(%%vote%%) !important;
+    width: 23px !important;
+    height: 23px !important;
 }
 
-	.arrow.down {
-		background-position: -23px 0px;
-	}
+.arrow.down {
+    background-position: -23px 0px;
+}
 
-	.arrow.downmod {
-		background-position: -23px -23px;
-	}
+.arrow.downmod {
+    background-position: -23px -23px;
+}
 
-	.arrow.up {
-		background-position: 0px 0px;
-	}
+.arrow.up {
+    background-position: 0px 0px;
+}
 
-	.arrow.upmod {
-		background-position: 0px -23px;
-	}
+.arrow.upmod {
+    background-position: 0px -23px;
+}
 
 .arrow.up:hover:before {
 	content: "So say we all. Huzzah!";
@@ -310,13 +295,63 @@ form .spacer+.spacer{
     margin-top: 25px;
 }
 
-
-
 /***** FLAIR *****/
 
-/* To be replaced by images at a later date */
-
 .flair {
+    background: url(%%flair%%) no-repeat -9999px;
+    border: 0;
+    padding: 0;
+}
+
+.flair-arms-avalon {
+    width: 32px;
+    height: 40px;
+    background-position: 0 0;
+}
+
+.flair-arms-castille {
+    width: 32px;
+    height: 40px;
+    background-position: 0 -40px;
+}
+
+.flair-arms-eisen {
+    width: 32px;
+    height: 40px;
+    background-position: 0 -80px;
+}
+
+.flair-arms-montaigne {
+    width: 32px;
+    height: 40px;
+    background-position: 0 -120px;
+}
+
+.flair-arms-sarmatian {
+    width: 32px;
+    height: 40px;
+    background-position: 0 -160px;
+}
+
+.flair-arms-ussura {
+    width: 32px;
+    height: 40px;
+    background-position: 0 -200px;
+}
+
+.flair-arms-vesten {
+    width: 32px;
+    height: 40px;
+    background-position: 0 -240px;
+}
+
+.flair-arms-vodacce {
+    width: 32px;
+    height: 40px;
+    background-position: 0 -280px;
+}
+
+.flair-text {
 	position: relative;
 	text-shadow: 1px 1px #000, 1px 1px 0.1px #000;
 	color: #FFDD00;
@@ -325,8 +360,6 @@ form .spacer+.spacer{
 	border: 1px #500000;
 	padding: 1px 3px 1px 3px;
 }
-
-
 
 /***** LISTING *****/
 
@@ -347,8 +380,6 @@ form .spacer+.spacer{
 	.expando-button.expanded {
 		background-position: 0px 0px;
 	}
-
-
 
 /***** COMMENTS *****/
 
@@ -372,8 +403,6 @@ form .spacer+.spacer{
 .content .commentarea .comment, .content .commentarea .comment .comment .comment, .content .commentarea .comment .comment .comment .comment .comment, .content .commentarea .comment .comment .comment .comment .comment .comment .comment, .content .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment {
 	background-color: #F9EDCC;
 }
-
-
 
 /***** LINKS *****/
 
@@ -405,6 +434,7 @@ form .spacer+.spacer{
 
 .footer-parent {
 	background: url(%%footer%%) 50% 0% no-repeat;
+	background-size: 500px;
 	padding-top: 150px; /* despite being the default on 'links' and 'comments' still needs to be explicitly set because the value is 40px on any 'Page Not Found' */
 }
 
